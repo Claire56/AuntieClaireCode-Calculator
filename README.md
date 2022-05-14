@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Overview](#Overview)
 * [Instructions](#Instructions)
+* [Resources](#Resources)
 * [Setup and installation](#Setup-and-installation)
 * [Tech Stack](#Tech-Stack)
 * [Future Features](#Future-Features)
@@ -16,6 +17,11 @@ Please do not do your work on the main branch.
 $ git checkout -b nameOfYourBranch
 ###### how to go to a branch so you can use it 
  $ git checkout  nameOfYourBranch
+ 
+ ## Resources
+ learn about jinja <br>
+ https://zetcode.com/python/jinja/ <br>
+ https://realpython.com/primer-on-jinja-templating/ 
 
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
