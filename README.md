@@ -8,7 +8,7 @@
 * [Future Features](#Future-Features)
 
 ## Overview
-Now that you have learned how to write functions, import modules, use Flask server and Jinja templates. You are going to use that knowledge to do a small web app assignment. In this assignment you will be creating a calculator, that will be used by your clients via a REST API. Use the Flask server to create a this web application. Feel free to incoporate any designs, modules and libraries. when you are done update the Tech Stack section of the readme, on your Branch.
+Now that you have learned how to write functions, import modules, use Flask server and Jinja templates. You are going to use that knowledge to do a small web app assignment. In this assignment you will be creating a calculator, that will be used by your clients via a REST API. Use the Flask server to create this web application. Feel free to add any designs, modules and libraries. when you are done <b> update the Tech Stack section of the readme, on your Branch.</b>
 
 ## Instructions
 Please do not do your work on the main branch.
@@ -20,7 +20,7 @@ $ git checkout -b nameOfYourBranch
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
 
-$ git clonehttps://github.com/Claire56/AuntieClaireCode-Calculator <br>
+$ git clone https://github.com/Claire56/AuntieClaireCode-Calculator.git <br>
 Create a virtual environment in the directory:
 
 $ virtualenv env<br>
