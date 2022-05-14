@@ -20,7 +20,11 @@ $ git checkout -b nameOfYourBranch
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
 
-$ git clone https://github.com/Claire56/AuntieClaireCode-Calculator.git <br>
+$ git clone https://github.com/Claire56/AuntieClaireCode-Calculator.git <br> <br>
+change directory <br>
+
+$cd AuntieClaireCode-Calculator <br>
+
 Create a virtual environment in the directory:
 
 $ virtualenv env<br>
