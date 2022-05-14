@@ -19,9 +19,11 @@ $ git checkout -b nameOfYourBranch
  $ git checkout  nameOfYourBranch
  
  ## Resources
- learn about jinja <br>
+ #### learn about jinja 
  https://zetcode.com/python/jinja/ <br>
  https://realpython.com/primer-on-jinja-templating/ 
+ #### Flask
+ https://www.geeksforgeeks.org/flask-creating-first-simple-application/ 
 
 ## Setup and installation
 On local machine, go to desired directory. Clone  repository:
