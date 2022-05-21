@@ -18,7 +18,7 @@ app.secret_key = "nabawanda"
 @app.route('/')
 def homepage():
 
-	return render_template('homepage.html')
+	return render_template('home.html')
 
 @app.route('/calculate')
 def calculation():
