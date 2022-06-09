@@ -7,69 +7,32 @@
 
 {% endblock %}
 
-
 {% block content %}
-
-<form>
-    <label for="fname"> What do you need to calculate :</label><br>
-  <input type="text" id="userrequest" name="Request"><br>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
+<div>
+  <h2>LETS CALCULATE</h2>
+<form  method="POST">
+  Enter number <input type="number" name="num1" min="1"><br>
+  <br>
+  Enter number <input type="number" name="num2" min="1"><br>
+  <br>
   <table>
-  <h2>Calculator</h2>
+    <tr>
+  <td><input type="submit" name="add" value="ADD"/></td>
+  <td><input type="submit" name="Sub" value="SUBTRACT"/></td>
+</tr>
+<tr>
+  <td><input type="submit" name="div" value="DIVIDE"/></td>
+  <td><input type="submit" name="mult" value="MULTIPLY"/></td>
+</tr>
+</table>
 
-<div class="row">
-  <div class="column" >
-    <h2>Enter first number</h2>
-    <p><input type="number" name="num" min="1"><br></p>
-  </div>
-  <div class="column" >
-    <h2>Select operator</h2>
-    <p><input type="radio" id="add" name="add" value="add">
-  <label for="add">add</label><br>
-  <input type="radio" id="subtract" name="subtract" value="subtract">
-  <label for="add">subtract</label><br>
-  <input type="radio" id="multiply" name="multiply" value="multiply">
-  <label for="add">multiply</label><br>
-  <input type="radio" id="division" name="division" value="division">
-  <label for="add">division</label><br></p>
-  </div>
-  <div class="column" >
-    <h2>Select second number and Submit</h2>
-    <p><input type="number" name="num" min="1"><br>
-    <br>
-    <br>
-    <br>
 
-  <input type="submit"></p>
-  </div>
+
+</form>
 </div>
-</form>
-<table>
 
-
-    
-</form>
-
-<b>Your Answer is</b> 
+{% if val != "na" %}
+    <h3>The answer is {{val}}</h3>
+  {% endif %}
 
 {% endblock %}
