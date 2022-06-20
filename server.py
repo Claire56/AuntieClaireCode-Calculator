@@ -1,4 +1,4 @@
-from helper_functions import *
+from helper_functions import adding, subtraction, multiplication, modulo
 # from flask import Flask ,render_template, session,jsonify, request ,redirect, make_response
 # from flask_debugtoolbar import DebugToolbarExtension
 from jinja2 import StrictUndefined
@@ -20,20 +20,21 @@ def homepage():
     if request.method == "POST":
         val1 = int(request.form["num1"])
         val2 = int(request.form["num2"])
+        operator = request.form["operator"]
 
 
 
-        if (request.form.get("add")):
-            res = val1 + val2
+        if operator == "add":
+            res = adding(val1, val2)
             return render_template('home.html', val=res)
-        if (request.form.get("Sub")):
-            res = val1 - val2
+        if operator == "subtract":
+            res = subtraction(val1, val2)
             return render_template('home.html', val=res)
-        if (request.form.get("div")):
-            res = val1 / val2
+        if operator == "multiply":
+            res = multiplication(val1, val2)
             return render_template('home.html', val=res)
-        if (request.form.get("mult")):
-            res = val1 * val2
+        if operator == "modula":
+            res = modulo(val1, val2)
             return render_template('home.html', val=res)
 
     else:

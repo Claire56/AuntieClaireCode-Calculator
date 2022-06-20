@@ -1,4 +1,4 @@
-{%  extends  'base.html' %}
+ {%  extends  'base.html' %}
 
 {% block head %}
 
@@ -15,16 +15,15 @@
   <br>
   Enter number <input type="number" name="num2" min="1"><br>
   <br>
-  <table>
-    <tr>
-  <td><input type="submit" name="add" value="ADD"/></td>
-  <td><input type="submit" name="Sub" value="SUBTRACT"/></td>
-</tr>
-<tr>
-  <td><input type="submit" name="div" value="DIVIDE"/></td>
-  <td><input type="submit" name="mult" value="MULTIPLY"/></td>
-</tr>
-</table>
+
+  <lable>Choose an operator</lable>
+  <select name="operator" id="operator">
+    <option value="add">Add</option>
+    <option value="subtract">Subtract</option>
+    <option value="multiply">Multiply</option>
+    <option value="modula">Modula</option>
+  </select>
+  <input type="submit" name="send" value="send"/>
 
 
 
