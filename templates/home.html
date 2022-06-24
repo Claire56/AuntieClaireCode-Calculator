@@ -11,11 +11,205 @@
 {% block content %}
 
 <form>
-    <label for="fname"> What to you need to calculate :</label><br>
+    <label for="fname"> What do you need to calculate? :</label><br>
   <input type="text" id="userrequest" name="Request"><br>
   
     
 </form>
+
+.FirstNumber {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+.firstNumber -screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+SecondNumber {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+.SecondNumber -screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #337cac;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.all-clear:hover {
+  background-color: #f17377;
+}
+
+.equal-sign {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+}
+
+.equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+</style>
+<table>
+<h2>Our first simple Calculator</h2>
+<h3>Welcome!</h3>
+
+<div class="row">
+<div class="column" >
+  <h2>Please enter your first number</h2>
+  <p><input type="number" name="num1" min="1"><br></p>
+</div>
+<div class="column" >
+
+  <div class="FirstNumber">
+
+    <input type="text" class="FirstNumber-screen" value="0" disabled />
+  
+    <div class="FirstNumber-keys">
+  
+      
+      <button type="button" value="7">7</button>
+      <button type="button" value="8">8</button>
+      <button type="button" value="9">9</button>
+  
+  
+      <button type="button" value="4">4</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="6">6</button>
+  
+  
+      <button type="button" value="1">1</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="3">3</button>
+  
+  
+      <button type="button" value="0">0</button>
+      <button type="button" class="decimal" value=".">.</button>
+      <button type="button" class="all-clear" value="all-clear">AC</button>
+  
+  
+    </div>
+<div class= "row">
+  <div class = "column">
+  <div class="operator">
+    <h2>Please select operator</h2>
+    
+ </div>
+
+ <div class = "column">
+  <div class="operator">
+    <label for="operator">Choose an operator:</label>
+
+    <select name="operator" id="operator">
+      <option value="add">add</option>
+      <option value="subtract">subtract</option>
+      <option value="multiply">multiply</option>
+      <option value="modulo">modulo</option>
+      <option value="power_of">power_of</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+    <div class="column" >
+      <h2>Please enter your second number</h2>
+      <p><input type="number" name="num2" min="1"><br></p>
+    </div>
+    <div class="column" >
+    
+      <div class="SecondNumber">
+    
+        <input type="text" class="SecondNumber-screen" value="0" disabled />
+    
+      <div class="SecondNumber-keys">
+    
+        
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+    
+    
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+    
+    
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+    
+    
+        <button type="button" value="0">0</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type="button" class="all-clear" value="all-clear">AC</button>
+    
+           
+      </div>
+    </div>
+   
+  <br>
+  <br>
+  <br>
+
+<p><input type="submit"></p>
+</div>
+</div>
+</form>
+<table>
+
+
+
+</form>
+
+<b>Your Answer is</b> 
 
 
 
