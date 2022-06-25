@@ -15,6 +15,10 @@ app.secret_key = "nabawanda"
 
 
 #add your routes here
+@app.route('/')
+def home():
+    return render_template('home.html')
+
 @app.route('/DoreenSimpleCalc',methods =['POST', 'GET'])
 def DoreenSimpleCalc():
      if request.method == "POST":
