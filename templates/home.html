@@ -16,3 +16,118 @@
   
     
 </form>
+<table>
+  <h2>Our first simple Calculator</h2>
+  <h3>Welcome!</h3>
+  
+  <div class="row">
+  <div class="column" >
+    <h2>Please enter your first number</h2>
+    <p><input type="number" name="num1" min="1"><br></p>
+  </div>
+  <div class="column" >
+  
+    <div class="FirstNumber">
+  
+      <input type="text" class="FirstNumber-screen" value="0" disabled />
+    
+      <div class="FirstNumber-keys">
+    
+        
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+    
+    
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+    
+    
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+    
+    
+        <button type="button" value="0">0</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type="button" class="all-clear" value="all-clear">AC</button>
+    
+    
+      </div>
+  <div class= "row">
+    <div class = "column">
+    <div class="operator">
+      <h2>Please select operator</h2>
+      
+   </div>
+  
+   <div class = "column">
+    <div class="operator">
+      <label for="operator">Choose an operator:</label>
+  
+      <select name="operator" id="operator">
+        <option value="ADD">ADD</option>
+        <option value="SUBTRACT">SUBTRACT</option>
+        <option value="MULTIPLY">MULTIPLY</option>
+        <option value="MODULO">MODULO</option>
+        <option value="POWER_OF">POWER_OF</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+      <div class="column" >
+        <h2>Please enter your second number</h2>
+        <p><input type="number" name="num2" min="1"><br></p>
+      </div>
+      <div class="column" >
+      
+        <div class="SecondNumber">
+      
+          <input type="text" class="SecondNumber-screen" value="0" disabled />
+      
+        <div class="SecondNumber-keys">
+      
+          
+          <button type="button" value="7">7</button>
+          <button type="button" value="8">8</button>
+          <button type="button" value="9">9</button>
+      
+      
+          <button type="button" value="4">4</button>
+          <button type="button" value="5">5</button>
+          <button type="button" value="6">6</button>
+      
+      
+          <button type="button" value="1">1</button>
+          <button type="button" value="2">2</button>
+          <button type="button" value="3">3</button>
+      
+      
+          <button type="button" value="0">0</button>
+          <button type="button" class="decimal" value=".">.</button>
+          <button type="button" class="all-clear" value="all-clear">AC</button>
+      
+             
+        </div>
+      </div>
+     
+    <br>
+    <br>
+    <br>
+  
+  <p><input type="submit"></p>
+  </div>
+  </div>
+  </form>
+  <table>
+  
+  
+  
+  </form>
+  
+  <b>Your Answer is</b> 
+  
+  
+  
+  {% endblock %}

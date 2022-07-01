@@ -26,12 +26,8 @@ def DoreenSimpleCalc():
         val2 = int(request.form["num2"])
         operator = request.form["operator"]
 
-        return render_template('home.html')
-
-@app.route('/calculate')
-def calculation():
         
-   def calculation():
+
         if "operator" == "add":
             res = adding(val1, val2)
             return render_template('home.html', val=res)
@@ -55,6 +51,7 @@ def calculation():
  
 
 	
+
 
 
 if __name__== "__main__":
