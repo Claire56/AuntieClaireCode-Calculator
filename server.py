@@ -17,7 +17,7 @@ app.secret_key = "nabawanda"
 #add your routes here
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('homenew.html')
 
 @app.route('/DoreenSimpleCalc',methods =['POST', 'GET'])
 def DoreenSimpleCalc():
@@ -30,24 +30,24 @@ def DoreenSimpleCalc():
 
         if "operator" == "add":
             res = adding(val1, val2)
-            return render_template('home.html', val=res)
+            return render_template('homenew.html', val=res)
         if "operator" == "subtract":
             res = subtraction(val1, val2)
-            return render_template('home.html', val=res)
+            return render_template('homenew.html', val=res)
         if "operator" == "multiply":
             res = multiplication(val1, val2)
-            return render_template('home.html', val=res)
+            return render_template('homenew.html', val=res)
         if "operator" == "modula":
             res = modulo(val1, val2)
-            return render_template('home.html', val=res)
+            return render_template('homenew.html', val=res)
         if "operator" == "power_of":
             res = power_of(val1, val2)
-            return render_template('home.html', val=res)
+            return render_template('homenew.html', val=res)
 
 
         else:
 
-                return render_template('home.html', val="na")
+                return render_template('homenew.html', val="na")
  
 
 	
