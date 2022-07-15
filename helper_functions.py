@@ -15,7 +15,7 @@ def multiplication(a , b):
 #this function returns the product of the two numbers
     return a * b
 
-def modulo(a , b):
+def modulus(a , b):
  #this function returns the remainder after dividing the irst number by the second number
     return a % b
     
