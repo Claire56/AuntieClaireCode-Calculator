@@ -31,26 +31,26 @@ def calculate():
 
         if (request.form.get("addNumbers")):
             res = adding(val1, val2)
-            return render_template('homenew.html', res)
+            return render_template('homenew.html', res=res)
         if (request.form.get("subtractNumbers")):
             res = subtraction(val1, val2)
-            return render_template('homenew.html', res)
+            return render_template('homenew.html', res=res)
         if (request.form.get("multiplyNumbers")):
             res = multiplication(val1, val2)
-            return render_template('homenew.html', res)
+            return render_template('homenew.html', res=res)
         if (request.form.get("modulusNumbers")):
             res = modulus(val1, val2)
-            return render_template('homenew.html', res)
+            return render_template('homenew.html', res=res)
         if (request.form.get("Numbertopower_of")):
             res = power_of(val1, val2)
-            return render_template('homenew.html', res)
+            return render_template('homenew.html', res=res)
 
 
         else:
 
                 return render_template('homenew.html', res="notvalid")
  
- 
+
 
 	
 
