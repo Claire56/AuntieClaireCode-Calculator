@@ -5,9 +5,9 @@
 <form> 
     <label for="firstNumber">Please enter your first Number:</label>
     <input type="number" id="firstNumber" name="firstNumber" min="1" >
-</form>
 
-<form>
+
+
     <div class="Operator">
         <button onclick="myFunction()" class="dropbtn">Choose an Operator</button>
         <div id="myDropdown" class="dropdown-content">
@@ -21,15 +21,17 @@
         </div>
     </div>
 
-</form>
 
 
-<form>
+
+
     <label for="secondNumber">Please enter your Second Number :</label>
     <input type="number" id="secondNumber" name="secondNumber" min="1" >
-</form>
+
   
-<form><input type="submit" value="Process"></form>
+<input type="submit" value="Process">
+
+</form>
 
 {% if {{res}} != "notvalid" %}
     <p> Your answer is {{res}}</p>
