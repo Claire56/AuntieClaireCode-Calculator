@@ -50,6 +50,7 @@ def calculate():
 
                 return render_template('homenew.html', res="notvalid")
  
+ 
 
 	
 
