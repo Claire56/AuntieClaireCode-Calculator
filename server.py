@@ -1,5 +1,5 @@
 from turtle import reset
-from helper_functions import adding, modulus,subtraction,multiplication,modulo,power_of
+from helper_functions import adding,subtraction,multiplication,modulus,power_of
 # from flask import Flask ,render_template, session,jsonify, request ,redirect, make_response
 # from flask_debugtoolbar import DebugToolbarExtension
 from jinja2 import StrictUndefined

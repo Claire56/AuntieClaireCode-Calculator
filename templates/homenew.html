@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+</head>
+<title></title>
 <body>
 
 <form> 
     <label for="firstNumber">Please enter your first Number:</label>
-    <input type="number" id="firstNumber" name="firstNumber" min="1" >
+    <input type="number" id="firstNumber" name="firstNumber" min="1" > 
+    
+    <br />
+    <br />
 
-
-
-    <div class="Operator">
+    <div class="operator">
         <button onclick="myFunction()" class="dropbtn">Choose an Operator</button>
         <div id="myDropdown" class="dropdown-content">
             <select name="operator" id="operator">
@@ -21,23 +24,23 @@
         </div>
     </div>
 
-
-
-
+    <br />
 
     <label for="secondNumber">Please enter your Second Number :</label>
-    <input type="number" id="secondNumber" name="secondNumber" min="1" >
+    <input type="number" id="secondNumber" name="secondNumber" min="1" > 
+    
+    <br />
 
-  
-<input type="submit" value="Process">
+<p><input type="submit" value="Process"></p>
 
-</form>
 
 {% if {{res}} != "notvalid" %}
     <p> Your answer is {{res}}</p>
 {% else %}
     <p> Please enter the fields right</p>
 {% endif %}
+
+</form>
 
 </body>
 </html>
